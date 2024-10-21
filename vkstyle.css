@@ -1,0 +1,527 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+}
+
+:root {
+font-size: 62.5%;
+font-family: Josefin Sans;
+
+}
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+
+
+
+header{
+  
+background-image:url("/img/image1.jpg");
+  /* Ajustar o tamanho da foto para 100% de largura */
+  
+  background-size: 100%; 
+  
+  
+  height: 72.0rem;
+  animation: topdown ease 500ms;
+
+  
+  
+}
+
+.page{
+background-color: rgba(66, 50, 50, 0.267);
+height: 80rem;
+}
+
+.barra{
+margin: auto;
+display: flex;
+justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Mantém tudo alinhado verticalmente */
+}
+
+.logo img {
+  width: auto;
+  height: 40rem; /* Defina um tamanho fixo adequado */
+  max-height: 60rem; /* Limita o crescimento da logo */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 1.0rem;
+  margin: 0 1.0rem;
+  transition: 200ms ease;
+  animation: tracking-in-expand .9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.navbar a:hover{
+  transform: scale(1.03);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+
+.social-icons img {
+  margin-left: 1.0rem;
+  transition: 200ms ease
+}
+.social-icons img:hover {
+  transform: scale(1.03);
+}
+
+.txt{
+  margin: auto;
+  width: 60rem;
+  padding-top: 5rem; /* Reduzi o padding para que a logo não empurre o texto */
+}
+.txt h1{
+  
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  font-size: 4.0rem;
+
+  transition: ease 1ms;
+}
+
+.left {
+text-align: left;
+
+}
+
+.right {
+text-align: right;
+
+}
+
+p{
+padding-top: .1rem;
+color: #FFF;
+
+text-align: center;
+
+font-size: 2.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.separator {
+width: 37rem;
+border-top: 0.1rem solid #ffffff; /* Cor da linha */
+margin: 0.4rem 0 0.8rem 0; /* Espaçamento superior e inferior da linha */
+}
+
+.separatorright {
+width: 45rem;
+border-top: 0.1rem solid #ffffff; /* Cor da linha */
+margin: 0.4rem 0px 0.8rem 5.5rem; /* Espaçamento superior e inferior da linha */
+}
+
+
+/* ------------------------------QUEM SOMOS---------------------------------- */
+
+
+.quemsomos {
+background: #F8F3F1;
+text-align: center;
+animation: downtop 600ms 250ms backwards;
+}
+
+.quemsomos h2 {
+color: #524036;
+text-align: center;
+font-size: 4rem;
+font-weight: 300;
+
+padding-top: 3rem;
+}
+
+.quemsomos h2 strong{
+font-weight: 700;
+}
+
+.content p{
+color: #524036;
+font-size: 2.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.content {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: left;
+max-width: 1000px;
+margin: auto;
+padding: 5rem;
+gap: 15rem;
+}
+
+.content img {
+border: .2rem solid #524036;
+width: 30rem;
+height: 40rem;
+border-radius: 0rem 3.75rem;
+
+}
+
+
+/* ------------------------------COMO ATUAMOS---------------------------------- */
+
+
+.comoatuamos {
+background: #EFE9E6;
+text-align: center;
+height: 45.0rem;
+animation: downtop 600ms 250ms backwards;
+}
+
+.comoatuamos h3 {
+padding-top: 3rem;
+
+color: #524036;
+text-align: center;
+font-size: 4rem;
+font-style: normal;
+font-weight: 300;
+
+}
+
+.comoatuamos h3 strong{
+font-weight: 700;
+}
+
+.box-container {
+display: flex;
+justify-content: space-around;
+margin-top: 2.0rem;
+}
+
+.box {
+border-radius: 0.4725rem;
+background: #B8A79D;
+
+width: 36.0625rem;
+height: 30.3125rem;
+
+padding: 2.0rem;
+border: 1px solid #ddd;
+border-radius: 0.8rem;
+margin: 1.0rem;
+}
+
+.box img {
+max-width: 100%;
+height: auto;
+margin: 3.0rem 0 2.0rem;
+}
+
+.box h4{
+color: #EFE9E6;
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 1.5rem;
+}
+
+.box p{
+color: #EFE9E6;
+font-size: 2rem;
+font-weight: 400;
+margin-bottom: 2rem;
+}
+
+/* ------------------------------NOSSOS PROJETOS---------------------------------- */
+.nossosprojetos{
+background: #F8F3F1;
+  text-align: center;
+  animation: downtop 600ms 250ms backwards;
+}
+
+.nossosprojetos h3{
+padding-top: 3rem;
+
+color: #524036;
+text-align: center;
+font-size: 4rem;
+font-style: normal;
+font-weight: 300;
+}
+
+.nossosprojetos h3 strong{
+font-weight: 700;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+margin: 20px auto; /* Centraliza o grid */
+
+/* max-width: 800px; Define uma largura máxima para o grid se desejar */
+}
+
+.grid-item {
+position:relative;
+
+/* overflow: hidden; */
+}
+
+.project-title{
+color: #ffffff;
+font-weight: 400;
+font-size: 4rem;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+/* background-color: #f8f3f160; */
+padding: 3.5rem;
+text-align: center;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover .project-title{
+opacity: 1;
+}
+
+.grid-item img {
+position: relative;
+border: .3rem solid #B8A79D;
+border-radius: 2rem ;
+width: 50rem;
+height: auto;
+transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover img {
+transform: scale(1.01);
+}
+
+.location {
+color: #fff;
+
+font-size: 1.8rem;
+font-weight: 300;
+
+
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+
+opacity: 0;
+padding: 1rem;
+text-align: center;
+
+transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover .location{
+opacity: 1;
+}
+
+
+/* ---------------------FOOTER---------------------------- */
+      
+.footer{
+background: #EFE9E6;
+text-align: center;
+max-width: 100%;
+height: 40rem;
+animation: downtop 600ms 250ms backwards;
+
+}
+
+.footer h6{
+padding-top: 3rem;
+
+color: #524036;
+text-align: center;
+font-size: 4rem;
+font-style: normal;
+font-weight: 300;
+}
+
+.footer h6 strong{
+font-weight: 700;
+}
+
+.container-footer{
+padding-top: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 20rem;
+
+}
+.contato{
+width: 25rem;
+height: max-content;
+
+text-align: left;
+}
+.contato p{
+padding-top: .8rem;
+display: flex;
+text-align: left;
+color: #000;
+font-weight: 300;
+}
+
+.contato span{
+display: flex;
+text-align: left;
+font-size: 2rem;
+font-weight: 700;
+}
+
+
+
+button a{
+display: flex;
+text-decoration: none;
+gap: 2rem;
+align-items: center;
+}
+
+
+
+
+
+button p{
+position: relative;
+
+display: flex;
+flex-direction: row;
+font-size: 1.5rem;
+font-weight: 300;
+line-height: 2.8rem;
+
+
+}
+button{
+text-transform: uppercase;
+color: #EFE9E6;
+
+background: #B8A79D;
+border: none;
+border-radius: 1rem;
+width: 20rem;
+height: 5rem;
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+cursor:pointer;
+transition: 200ms ease;
+}
+
+button:hover{
+  background: #9c867b;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+@keyframes topdown{
+        0%{
+          opacity: 0;
+          transform: translateY(-25px);
+        }
+      
+        100%{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes downtop{
+        0%{
+          opacity: 0;
+          transform: translateY(25px);
+        }
+      
+        100%{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      } */
+      
+      @-webkit-keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
