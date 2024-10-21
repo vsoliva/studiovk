@@ -21,7 +21,7 @@ overflow-x: hidden;
 
 header{
   
-background-image:url("/img/image1.jpg");
+background-image:url("./img/image1.jpg");
   /* Ajustar o tamanho da foto para 100% de largura */
   
   background-size: 100%; 
